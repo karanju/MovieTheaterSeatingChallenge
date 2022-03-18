@@ -14,7 +14,7 @@ public class TicketTest {
         } catch (TicketException e) {
             assertTrue(true);
             isException = true;
-        } catch (Exception e) {
+        } catch (Exception e) {             // in case the internal application call fails ( dependency fail )
             assertTrue(false);
             isException = true;
         } finally {
@@ -40,4 +40,7 @@ public class TicketTest {
             assertTrue(isException);
         }
     }
+
+
+
 }

@@ -1,11 +1,10 @@
 public class TicketException extends Exception {
 
     public enum Types {
-        fileNotReadableException,
-        invalidInputException,
-        noVacantSpaceException,
-        maxSizeExceededException,
-        fileNotWritable
+        FileNotReadableException,
+        InvalidInputException,
+        NoVacantSpaceException,
+        FileNotWritable
     }
 
     private String messageString;
